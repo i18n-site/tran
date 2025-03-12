@@ -1,0 +1,48 @@
+[package]
+name = "i18n"
+version = "0.1.0"
+edition = "2024"
+description = "i18n"
+repository = "https://github.com/i18n-site/tran.git"
+homepage = "https://github.com/i18n-site/tran/tree/dev/i18n"
+keywords = [ ]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = [ "--cfg", "docsrs" ]
+
+[features]
+default = [ ]
+
+[dependencies]
+aok = "0.1.17"
+change = "0.2.9"
+clap = "4.5.32"
+cmdv = "0.1.11"
+globset = "0.4.16"
+index_of = "0.1.1"
+lang = "0.2.2"
+loginit = "0.1.18"
+saphyr = "0.0.3"
+static_init = "1.0.3"
+thiserror = "2.0.12"
+tracing = "0.1.41"
+xerr = "0.1.15"
+
+[dependencies.proto_tran]
+version = "0.1.13"
+path = "../proto/rust/proto_tran"
+
+[dependencies.tokio]
+version = "1.44.0"
+features = [ "rt", "time", "macros", "rt-multi-thread" ]
+
+[dev-dependencies]
+aok = "0.1.17"
+loginit = "0.1.18"
+static_init = "1.0.3"
+tracing = "0.1.41"
+
+[dev-dependencies.tokio]
+version = "1.44.0"
+features = [ "macros", "rt", "rt-multi-thread", "time", "sync" ]

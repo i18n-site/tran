@@ -1,0 +1,33 @@
+[package]
+name = "tran_term"
+license = "MulanPSL-2.0"
+version = "0.1.0"
+edition = "2024"
+description = "tran_term"
+repository = "https://github.com/i18n-site/tran.git"
+homepage = "https://github.com/i18n-site/tran/tree/dev/tran_term"
+keywords = []
+
+[features]
+default = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
+aok = "0.1.17"
+daachorse = "1.0.0"
+thiserror = "2.0.12"
+unicode-segmentation = "1.12.0"
+unicode_categories = "0.1.1"
+
+[dev-dependencies]
+aok = "0.1.17"
+loginit = "0.1.18"
+static_init = "1.0.3"
+tracing = "0.1.41"
+
+[dev-dependencies.tokio]
+version = "1.44.0"
+features = ["macros", "rt", "rt-multi-thread", "time", "sync"]
