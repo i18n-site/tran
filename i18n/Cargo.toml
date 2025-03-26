@@ -1,0 +1,67 @@
+[package]
+name = "i18n"
+version = "0.1.0"
+edition = "2024"
+description = "i18n"
+repository = "https://github.com/i18n-site/tran.git"
+homepage = "https://github.com/i18n-site/tran/tree/dev/i18n"
+keywords = []
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[features]
+default = []
+
+[dependencies]
+aok = "0.1.17"
+bytes = "1.10.1"
+change = "0.2.9"
+clap = "4.5.32"
+cmdv = "0.1.11"
+futures-util = "0.3.31"
+genv = "0.1.16"
+globset = "0.4.16"
+ifs = { version = "0.1.45", features = ["fs"] }
+index_of = "0.1.1"
+intbin = "0.2.3"
+ireq = "0.1.20"
+lang = "0.2.9"
+loginit = "0.1.18"
+pb-jelly = "0.0.17"
+pbar = "0.1.8"
+reqwest = "0.12.15"
+reqwest-websocket = "0.4.4"
+saphyr = "0.0.3"
+static_init = "1.0.3"
+thiserror = "2.0.12"
+tracing = "0.1.41"
+txtfmt = "0.1.2"
+vb = "0.1.8"
+xbin = "0.1.6"
+xerr = "0.1.15"
+xhash = { version = "0.1.32", features = ["xhash"] }
+zstd = "0.13.3"
+
+[dependencies.ub64]
+version = "0.1.14"
+features = ["u64"]
+
+[dependencies.proto_tran]
+version = "0.1.31"
+path = "../proto/rust/proto_tran"
+
+[dependencies.tokio]
+version = "1.44.1"
+features = ["rt", "time", "macros", "rt-multi-thread"]
+
+[dev-dependencies]
+aok = "0.1.17"
+loginit = "0.1.18"
+static_init = "1.0.3"
+tracing = "0.1.41"
+
+[dev-dependencies.tokio]
+version = "1.44.1"
+features = ["macros", "rt", "rt-multi-thread", "time", "sync"]

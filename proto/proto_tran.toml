@@ -1,0 +1,19 @@
+[package]
+name = "proto_tran"
+license = "MulanPSL-2.0"
+version = "0.1.31"
+edition = "2024"
+description = "proto_tran"
+repository = "https://github.com/i18n-site/tran.git"
+homepage = "https://github.com/i18n-site/tran/tree/dev/proto"
+keywords = []
+
+[features]
+default = []
+
+[dependencies]
+lazy_static = "1.5.0"
+pb-jelly = { version = "0.0.17" }
+
+[package.metadata.cargo-machete]
+ignored = ["lazy_static"]

@@ -1,0 +1,3 @@
+[workspace]
+resolver = "2"
+members = ["i18n", "tran", "tran_term", "proto/rust/proto_tran", "tran_trait"]
