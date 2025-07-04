@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+  # "tran",
+
+  "tran_term",
+  "tran_trait",
+  "remove_code_t",
+  "code_replace",
+]
