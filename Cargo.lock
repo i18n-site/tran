@@ -1134,7 +1134,7 @@ dependencies = [
 
 [[package]]
 name = "tran_term"
-version = "0.1.21"
+version = "0.1.22"
 dependencies = [
  "aok",
  "code_replace",
