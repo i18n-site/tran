@@ -56,7 +56,11 @@ fn map_li(map: &Yaml) -> Vec<(String, String)> {
 pub fn load(yml: impl AsRef<str>) -> Result<Term> {
   let mut term = Term::default();
   let mut lang_li = Vec::new();
-  for i in Yaml::load_from_str(yml.as_ref())? {
+  let yml = yml.as_ref();
+  if yml.is_empty() {
+    return Ok(term);
+  }
+  for i in Yaml::load_from_str(yml)? {
     if let Mapping(ref m) = i {
       for (lang, term_yml) in m {
         let term_li = map_li(term_yml);
