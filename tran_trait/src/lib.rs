@@ -7,5 +7,3 @@ pub trait FileTypeTran {
   fn parse(&mut self) -> Result<String>;
   fn restore(&mut self) -> Result<String>;
 }
-
-pub trait Tran {}
