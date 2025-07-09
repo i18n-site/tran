@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["tran"]
+members = ["tran", "tran_trait"]
 exclude = ["sh/_tmpl"]
 
 [profile.release]

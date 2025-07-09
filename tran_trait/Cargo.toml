@@ -1,11 +1,11 @@
 [package]
-name = "tran"
+name = "tran_trait"
 version = "0.2.0"
 edition = "2024"
 license = "MulanPSL-2.0"
 repository = "https://github.com/i18n-site/tran.git"
-homepage = "https://github.com/i18n-site/tran/tree/dev/tran"
-description = "tran"
+homepage = "https://github.com/i18n-site/tran/tree/dev/tran_trait"
+description = "tran_trait"
 keywords = []
 
 [features]
@@ -16,11 +16,9 @@ all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
-tran_api = "0.1.16"
-txtfmt = "0.1.2"
-aok = "0.1.17"
 
 [dev-dependencies]
+aok = "0.1.17"
 loginit = "0.1.18"
 static_init = "1.0.4"
 tracing = "0.1.41"

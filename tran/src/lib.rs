@@ -1,10 +1,5 @@
-use aok::{OK, Void};
+use aok::{OK, Result, Void};
 use tran_api::Job;
-
-pub trait Traner {
-  fn parse(&mut self) -> Result<String>;
-  fn restore(&mut self) -> Result<String>;
-}
 
 pub fn tran(job: Job) -> Void {
   /*
