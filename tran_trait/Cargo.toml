@@ -16,6 +16,7 @@ all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
+aok = "0.1.17"
 
 [dev-dependencies]
 aok = "0.1.17"
