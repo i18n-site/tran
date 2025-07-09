@@ -19,6 +19,7 @@ rustdoc-args = ["--cfg", "docsrs"]
 tran_api = "0.1.16"
 txtfmt = "0.1.2"
 aok = "0.1.17"
+tran_trait = { version = "0.2.0", path = "../tran_trait" }
 
 [dev-dependencies]
 loginit = "0.1.18"
