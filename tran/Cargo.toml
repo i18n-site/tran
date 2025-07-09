@@ -16,7 +16,7 @@ all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
-tran_api = "0.1.11"
+tran_api = "0.1.16"
 txtfmt = "0.1.2"
 aok = "0.1.17"
 
